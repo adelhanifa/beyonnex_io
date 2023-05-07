@@ -1,0 +1,22 @@
+#display {
+  width: calc($size * 15);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: calc($size * 4);
+
+  .minMax {
+    width: 100%;
+    margin-top: calc($size * -1.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .target {
+    font-size: calc($size * 2);
+    font-weight: bold;
+    color: $display-target;
+  }
+}

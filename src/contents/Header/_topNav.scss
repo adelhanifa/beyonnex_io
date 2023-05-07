@@ -1,0 +1,21 @@
+#topNav {
+  height: calc($size * 5);
+  background-color: $nav-bg;
+
+  .container {
+    display: flex;
+    padding: $size;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      background-image: url("../../images/logo.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: calc($size * 3);
+      width: calc($size * 20);
+    }
+  }
+}

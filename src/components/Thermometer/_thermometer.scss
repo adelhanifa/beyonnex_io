@@ -1,0 +1,36 @@
+#thermometer {
+  position: relative;
+  width: calc($size * 15);
+  height: calc($size * 15);
+  border-radius: 50%;
+  border: calc($size * 2/3) solid $thermometer-border;
+  margin: $size auto;
+
+  #pointer {
+    position: absolute;
+    width: 45%;
+    height: calc($size / 3);
+    top: 50%;
+    right: 50%;
+    background: $thermometer-pointer;
+    transform-origin: right;
+  }
+
+  .lineOutSide {
+    position: absolute;
+    width: calc($size * 2);
+    height: calc($size / 3);
+    background: $thermometer-border;
+    bottom: $size;
+  }
+
+  .lineMin {
+    left: 0;
+    transform: rotate(-45deg);
+  }
+
+  .lineMax {
+    right: 0;
+    transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,49 @@
+#form {
+  padding: $size;
+  text-align: center;
+  border: calc($size / 5) solid;
+  border-radius: $size;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .inputsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+
+    @include lg {
+      flex-direction: row;
+    }
+
+    .formGroupe {
+      margin: $size;
+
+      .formLabel {
+        font-weight: bold;
+      }
+
+      .formInput {
+        margin-top: $size;
+        padding: calc($size / 5);
+        width: -webkit-fill-available;
+      }
+
+      .notValid {
+        border-color: $inValid-input-border;
+      }
+    }
+  }
+
+  .formGroupe {
+    .submit {
+      margin: 0 $size;
+      padding: calc($size / 5);
+      width: -webkit-fill-available;
+    }
+  }
+}
